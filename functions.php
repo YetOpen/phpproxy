@@ -184,8 +184,11 @@ function rel2abs($rel, $base)
 	$path = preg_replace('#/[^/]*$#', '', $path);
 	/* destroy path if  relative url points to root */
 	if ($rel[0] == '/') $path = '';
+        // user / pass
+        $userpass = !empty($user.$pass) ? "$user:$pass@" : "";
+        $port = !empty($port) ? ":$port" : "";
 	/* dirty absolute  URL */
-	$abs = "$host$path/$rel";
+	$abs = "$userpass$host$port$path/$rel";
 	/* replace '//' or  '/./' or '/foo/../' with '/' */
 	$re = array(
 		'#(/\.?/)#',
@@ -197,6 +200,3 @@ function rel2abs($rel, $base)
 	/* absolute URL is  ready! */
 	return $scheme . '://' . $abs;
 }
-
-
-?>
