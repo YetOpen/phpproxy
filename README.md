@@ -20,7 +20,9 @@ PHP-Proxy - Requirements
 Installation
 ------------
 
-Download the archive and unzip it to the main directory in your server and you are ready to go.
+1. Download the archive and unzip it to a directory in your server (or clone from GitHub).
+2. Copy config-template.php to config.php and adapt parameters to your needs. 
+3. You are now ready to go!
 
 
 PHP-Proxy Demo

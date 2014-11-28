@@ -8,6 +8,9 @@ if(!function_exists("curl_init")){
 	die("cURL extension was not found on this server.");
 }
 
+if (!file_exists("config.php")) {
+    die("Please create config.php");
+}
 require("config.php");
 
 require("functions.php");

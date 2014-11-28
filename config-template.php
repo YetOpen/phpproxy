@@ -30,8 +30,8 @@ $config['user_agent'] = 'Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.goo
 
 // "blocked_ip" error will be thrown if any of the ips on this array tries using our proxy
 $config['blocked_ips'] = array(
-	'67.184.200.251',
-	'123.123.123.123'
+//	'67.184.200.251',
+//	'123.123.123.123'
 );
 
 /*
@@ -47,4 +47,3 @@ $config['blocked_domains'] = array(
 // UNDER CONSTRUCTION!!!! means nothing at the moment
 $config['enable_logging'] = false;
 
-?>
